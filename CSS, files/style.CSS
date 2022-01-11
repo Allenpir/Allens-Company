@@ -5,11 +5,13 @@
   --color-heading: #1b0760;
   --color-body: #918ca4;
 }
+/* typogrophy */
 html {
+  /* 16px*62.5 =10px  */
   font-size: 62.5%;
 }
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   color: var(--color-body);
 }
@@ -43,5 +45,28 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+/*links*/
+a {
+  text-decoration: none;
+}
+.link-arow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link-arow::after {
+  content: "-->";
+  margin-left: 5px;
+}
+.link-arow:hover::after {
+  margin-left: 11px;
+  transition: margin 0.5s;
+}
+@media screen and (min-width: 1024px) {
+  .link-arow {
+    font-size: 1.5rem;
   }
 }
