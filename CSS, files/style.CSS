@@ -1,9 +1,15 @@
 :root {
-  --color-primery: #2584ff;
+  --color-primary: #2584ff;
   --color-secondery: #00d9ff;
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 /* typogrophy */
 html {
@@ -79,7 +85,7 @@ a {
   white-space: nowrap;
 }
 .badge--primary {
-  background-color: var(--color-primery);
+  background-color: var(--color-primary);
   color: #fff;
 }
 
@@ -128,7 +134,7 @@ a {
   height: 40px;
 }
 .icon--primary {
-  fill: var(--color-primery);
+  fill: var(--color-primary);
 }
 .icon-container {
   background: #f3f9fa;
@@ -138,4 +144,53 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+/*button*/
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 1rem 0;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn--primary:hover {
+  background: aquamarine;
+}
+
+.btn--secondery {
+  background: var(--color-secondery);
+  color: #fff;
+}
+
+.btn--secondery:hover {
+  background: #00c8eb;
+}
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ec3000;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
