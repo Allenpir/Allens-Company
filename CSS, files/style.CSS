@@ -1,6 +1,6 @@
 :root {
   --color-primary: #2584ff;
-  --color-secondery: #00d9ff;
+  --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
@@ -92,12 +92,13 @@ a {
 }
 
 .badge--secondary {
-  background-color: var(--color-secondery);
+  background-color: var(--color-secondary);
   color: #fff;
 }
 
-.bodge--small {
+.badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -169,12 +170,12 @@ a {
   background: aquamarine;
 }
 
-.btn--secondery {
-  background: var(--color-secondery);
+.btn--secondary {
+  background: var(--color-secondary);
   color: #fff;
 }
 
-.btn--secondery:hover {
+.btn--secondary:hover {
   background: #00c8eb;
 }
 .btn--accent {
@@ -189,6 +190,15 @@ a {
 .btn--block {
   width: 100%;
   display: inline-block;
+}
+.btn--outline {
+  background: #fff;
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+}
+.btn--outline:hover {
+  background: var(--color-heading);
+  color: #fff;
 }
 
 @media screen and (min-width: 1024px) {
@@ -238,7 +248,50 @@ a {
   color: #fff;
 }
 
-.card--secondery .card__header {
-  background: var(--color-secondery);
+.card--secondary .card__header {
+  background: var(--color-secondary);
   color: #fff;
+}
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+/*plans*/
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+  white-space: nowrap;
+}
+.plan__price {
+  font-size: 6rem;
+}
+.plan__billing--cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1024) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__illing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__description {
+    font-size: 1.7rem;
+  }
 }
