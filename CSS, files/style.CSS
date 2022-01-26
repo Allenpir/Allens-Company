@@ -1,4 +1,5 @@
 :root {
+  minifysvg: false;
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
@@ -672,14 +673,14 @@ a {
   .block-shadowcase .grid {
     grid-template-columns: 50% 50%;
   }
-  .block-showcase__img {
-    justify-self: end;
-  }
+}
+.block-showcase__img {
+  justify-self: end;
+}
 
-  .block-showcase__img .imgf {
-    width: auto;
-    max-width: 700px;
-  
+.block-showcase__img .imgf {
+  width: auto;
+  max-width: 700px;
 }
 .icon--place {
   transform: translateY(6rem);
