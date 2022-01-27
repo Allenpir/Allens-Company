@@ -266,6 +266,7 @@ a {
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: visible;
 }
 .card__header,
 .card__body {
