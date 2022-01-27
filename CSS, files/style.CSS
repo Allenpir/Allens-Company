@@ -290,6 +290,8 @@ a {
 /*plans*/
 .plan {
   transition: transform 1s ease-out;
+  max-height: 90%;
+  max-width: 90%;
 }
 .plan__name {
   color: #fff;
@@ -546,7 +548,7 @@ a {
   margin-bottom: 4rem;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 /*Navigation Bar*/
@@ -627,7 +629,7 @@ a {
 }
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: (2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -657,17 +659,21 @@ a {
 }
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem;
+  margin: 4rem;
 }
 .feature__img {
   width: 100%;
 }
 /* showcase block*/
+
 .container__img {
   max-width: auto;
 }
 .block-showcase__img .imgf {
   width: 100%;
+}
+.block-shadowcase .grid {
+  grid-template-columns: 90vw;
 }
 @media screen and (min-width: 768px) {
   .block-shadowcase .grid {
