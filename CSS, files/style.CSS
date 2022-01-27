@@ -439,6 +439,7 @@ a {
 .testimonial__image {
   position: relative;
   margin: 0 3rem;
+  width: 65vw;
 }
 .testimonial__image > img {
   width: 100%;
@@ -450,6 +451,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial__image {
+    width: auto;
+  }
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
